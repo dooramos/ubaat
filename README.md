@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="OriginSix" src=".github/preview.png" width="100%">
+  <img alt="UBAAT" src=".github/site-ubaat-git.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -38,16 +38,16 @@ Utilitários
 
 ## 💻 Projeto
 
-OriginSix é uma página institucional no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Depoimentos, Contato e Footer
+Este projeto é um site institucional no formato "One Page" ou "SPA Single Page Application", responsivo, para atender a UBAAT - União Brasileira de Associações de Arteterapia. 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1009807319507822993/Origin-Six). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o em [https://ubaat.com.br](https://www.ubaat.com.br). 
 
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Todos os direitos são reservados.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by Eduardo Ramos - Encanto Desenvolvimento de Software
