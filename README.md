@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="UBAAT" src=".github/site-ubaat-git.png" width="100%">
+  <img alt="UBAAT" src="https://github.com/dooramos/ubaat/blob/master/site-ubaat-git.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
