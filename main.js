@@ -1,57 +1,31 @@
-/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
+
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
-
 for (const element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
   })
 }
 
-/* quando clicar em um item do menu, esconder o menu */
 const links = document.querySelectorAll('nav ul li a')
-
 for (const link of links) {
   link.addEventListener('click', function () {
     nav.classList.remove('show')
   })
 }
 
-/* mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
 function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
-    // menor que a altura do header
     header.classList.remove('scroll')
   }
 }
-
-/* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper-container', {
-  
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  
-  autoplay: {
-    delay: 5000,
-  },/**/
-  //mousewheel: true,
-  //keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 3,
-      setWrapperSize: true
-    }
-  }
-});
-
-const swiper2 = new Swiper(".mySwiper", {
+ 
+const swpArteterapia = new Swiper(".swpArteterapia", {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
@@ -65,15 +39,65 @@ const swiper2 = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: 
+  {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      }
+}
+});
+const  swpArteterapiaTipos = new Swiper(".swpArteterapiaTipos", {
+  navigation: {
+    nextEl: ".swiper-button-next-art2",
+    prevEl: ".swiper-button-prev-art2",
+  } 
+});
+const  swpAssociacoes = new Swiper(".swpAssociacoes", {
+  
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      setWrapperSize: true
+    },
+    480: {
+      slidesPerView: 1,
+      setWrapperSize: true
+    },
+    640: {
+      slidesPerView: 3,
+      setWrapperSize: true
+    },
+    767: {
+      slidesPerView: 3,
+      setWrapperSize: true
+    }
+  }
 });
 
-const  swiper3 = new Swiper(".mySwiper3", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -82,17 +106,19 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
+ `#warning a,
+  #home video, #home a,
   #about .image, #about .text,
-  #services header, #services .card,
-  #testimonials header, #testimonials .testimonials
+  #legis .swiper
+  #arteterapia .swiper,
+  #arteterapia2 .swipper,
+  #associacoes .swipper,
   #contact .text, #contact .links,
-  footer .brand, footer .social
+  footer p
   `,
   { interval: 100 }
 )
 
-/* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
 
 function backToTop() {
@@ -103,7 +129,6 @@ function backToTop() {
   }
 }
 
-/* Menu ativo conforme a seção visível na página */
 const sections = document.querySelectorAll('main section.section[id]')
 function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
@@ -117,18 +142,24 @@ function activateMenuAtCurrentSection() {
     const checkpointStart = checkpoint >= sectionTop
     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
-    if (checkpointStart && checkpointEnd) {
-      document
-        .querySelector('nav ul li a[href*=' + sectionId + ']')
-        .classList.add('active')
-    } else {      
-        document
-        .querySelector('nav ul li a[href*=' + sectionId + ']')
-        .classList.remove('active')     
+    if (checkpointStart && checkpointEnd) 
+    {
+      if(document.querySelector('nav ul li a[href*=' + sectionId + ']')!=undefined        
+      && document.querySelector('nav ul li a[href*=' + sectionId + ']')!=null)
+      {
+        document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.add('active')
+      }
+    } 
+    else
+     {             
+        if(document.querySelector('nav ul li a[href*=' + sectionId + ']')!=undefined        
+        && document.querySelector('nav ul li a[href*=' + sectionId + ']')!=null)
+        {
+          document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.remove('active')     
+        }
     }
   }
 }
-
 
 function openTab(evt, tabName) {
   // Declare all variables
@@ -150,7 +181,6 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
 
 function getItemByRegion(regiao, index) {
   
@@ -196,9 +226,7 @@ function getItemByRegion(regiao, index) {
   });
 }
 
- 
-
-function getData(){
+function getCursos(){
   //const url = 'https://www.ubaat.com.br/assets/cursosubaat.json';
   fetch('./assets/cursosubaat.json')
   .then((resp) => resp.json())
@@ -239,7 +267,7 @@ function modalVi(modalToShow,openButton,closeButton){
       }
     };  
   }
-  function modalHome(modalToShow,closeButton){
+   function modalHome(modalToShow,closeButton){
     var modal = document.getElementById(modalToShow);
     var closeB = document.getElementById(closeButton);
     
@@ -251,38 +279,20 @@ function modalVi(modalToShow,openButton,closeButton){
       };  
       modal.style.display = "block";  
 
-    }
+     }
   
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
   activateMenuAtCurrentSection()
-  fixmeTop()
-})
  
-fixmeTop = function(){  
-  var fix=document.getElementsByClassName('.fixme')[0]
-  if(fix!=null){
-  var fixmeTop = fix.offsetTop;
-  var currentScroll = window.offsetTop;
-  if (currentScroll >= fixmeTop) {
-      fix.css({
-          position: 'fixed',
-          top: '0',
-          left: '0'
-      });
-  } else {
-      fix.css({
-          position: 'static'
-      });
-  }
-  }
-}
+}) 
 
+ swpArteterapia.init();
+ swpArteterapiaTipos.init();
+ swpAssociacoes.init();
 
-
-
-modalVi('videoModal','home','videoModalClose');
-modalHome('homeModal','homeModalClose');
-getData();
-modalFy('diretoriaModal','diretoriaModalOpen','diretoriaModalClose');
+ modalVi('videoModal','home','videoModalClose');
+ modalHome('homeModal','homeModalClose');
+getCursos();
+ modalFy('diretoriaModal','diretoriaModalOpen','diretoriaModalClose');
