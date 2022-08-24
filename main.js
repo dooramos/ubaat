@@ -103,23 +103,31 @@ const scrollReveal = ScrollReveal({
   distance: '30px',
   duration: 700,
   reset: true
-})
+});
+
+
 
 scrollReveal.reveal(
  `#warning a,
-  #home video, #home a,
-  #about .image, #about .text,
-  #legis .swiper
-  #arteterapia .swiper,
+  #home a,
+  #about .hightitle,
+  #cursos .tablinks, 
+  #arteterapia h2,  
   #arteterapia2 .swipper,
+  #legis h2,
+  #legis .swiper,
+  #legis .legis-1,
+  #legis .legis-2,
+  #legis .legis-3,
+  #legis .legis-4,
   #associacoes .swipper,
-  #contact .text, #contact .links,
-  footer p
+  #contact p, 
+  #contact form  
   `,
-  { interval: 100 }
-)
+  { interval: 300 }
+);
 
-const backToTopButton = document.querySelector('.back-to-top')
+const backToTopButton = document.querySelector('.back-to-top');
 
 function backToTop() {
   if (window.scrollY >= 560) {
@@ -129,8 +137,8 @@ function backToTop() {
   }
 }
 
-const sections = document.querySelectorAll('main section.section[id]')
 function activateMenuAtCurrentSection() {
+  const sections = document.querySelectorAll('main section.section[id]');  
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
   for (const section of sections) {
@@ -160,31 +168,36 @@ function activateMenuAtCurrentSection() {
     }
   }
 }
-
-function openTab(evt, tabName) {
-  // Declare all variables
+function closeTab(){  
   var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
-  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById('closeTab').style.display = "none";
+}
+function openTab(evt, tabName) {
+  
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
   document.getElementById(tabName).style.display = "block";
+  document.getElementById('closeTab').style.display = "block";
   evt.currentTarget.className += " active";
+
 }
 
 function getItemByRegion(regiao, index) {
-  
-  
   let _html ='<h3>' + regiao.regiao + '</h3>';
   let _container= "";
   switch(regiao.regiao){
@@ -227,7 +240,7 @@ function getItemByRegion(regiao, index) {
 }
 
 function getCursos(){
-  //const url = 'https://www.ubaat.com.br/assets/cursosubaat.json';
+  
   fetch('./assets/cursosubaat.json')
   .then((resp) => resp.json())
   .then(function(data) {
@@ -237,10 +250,9 @@ function getCursos(){
   .catch(function(error) {
     console.log(error);
       });
-    //swiper.init();
 }
 
-function modalFy(modalToShow,openButton,closeButton){
+function modalDiretoria(modalToShow,openButton,closeButton){
 var modal = document.getElementById(modalToShow);
 var openB = document.getElementById(openButton);
 var closeB = document.getElementById(closeButton);
@@ -253,7 +265,7 @@ var closeB = document.getElementById(closeButton);
   };  
 }
 
-function modalVi(modalToShow,openButton,closeButton){
+function modalVideo(modalToShow,openButton,closeButton){
   var modalVi = document.getElementById(modalToShow);
   var openVi = document.getElementById(openButton);
   var closeVi = document.getElementById(closeButton);
@@ -262,12 +274,12 @@ function modalVi(modalToShow,openButton,closeButton){
     if(closeVi!=null){ closeVi.onclick = function() {  modalVi.style.display = "none"; return false;}}
     window.onclick = function(event) {
       if (event.target == modalVi) {
-        modalVi.style.display = "none";
-        
+        modalVi.style.display = "none";        
       }
     };  
-  }
-   function modalHome(modalToShow,closeButton){
+}
+
+function modalAviso(modalToShow,closeButton){
     var modal = document.getElementById(modalToShow);
     var closeB = document.getElementById(closeButton);
     
@@ -279,20 +291,86 @@ function modalVi(modalToShow,openButton,closeButton){
       };  
       modal.style.display = "block";  
 
-     }
+}
+
+function contato(){
+  const nome=document.getElementById('nome');
+  const assunto=document.getElementById('assunto');
+  const mensagem=document.getElementById('mensagem');
+  const email=document.getElementById('email');
+
+if(nome.value!==''&&nome.value!==undefined&&nome.value!==null
+  && mensagem.value!==''&&mensagem.value!==undefined&&mensagem.value!==null
+  && email.value!==''&&email.value!==undefined&&email.value!==null
+  && assunto.value!==''&&assunto.value!==undefined&&assunto.value!==null
+  )
+  {   
+   
+    //fetch("https://localhost:44327/api/v1/Contato", {
+      fetch("https://api.ubaat.com.br/api/v1/Contato", {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: `{
+        "contatoDe": "${email.value}",
+        "contatoPara": "${assunto.value}",
+        "nome": "${nome.value}",
+        "mensagem": "${mensagem.value}"  
+      }`,
+    }).then((resp) => resp.json())
+    .then(function(data) {
   
+      if(data.status === 201||data.status ===200) {
+        Swal.fire({
+          title: 'Sucesso!',
+          text: 'Mensagem Enviada',
+          icon: 'success',
+          confirmButtonText: 'Fechar'
+        });
+      }
+      else
+      {
+        Swal.fire({
+          title: 'Atenção!',
+          text: 'Ocorreu um erro no envio da mensagem :(',
+          icon: 'error',
+          confirmButtonText: 'Fechar'
+        });
+      }
+      resetFormContato();
+    
+
+    });
+    return false;
+  } else
+  {
+    Swal.fire({
+      title: 'Atenção!',
+      text: 'Todos os campos são obrigatórios!',
+      icon: 'warning',
+      confirmButtonText: 'Fechar'
+    });
+  }
+}
+  function resetFormContato(){  
+document.forms[0].reset();
+  }
+
+
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
-  activateMenuAtCurrentSection()
- 
-}) 
+  activateMenuAtCurrentSection() 
+}); 
 
- swpArteterapia.init();
- swpArteterapiaTipos.init();
- swpAssociacoes.init();
+swpArteterapia.init();
+swpArteterapiaTipos.init();
+swpAssociacoes.init();
 
- modalVi('videoModal','home','videoModalClose');
- modalHome('homeModal','homeModalClose');
+modalVideo('videoModal','home','videoModalClose');
+modalAviso('homeModal','homeModalClose');
+modalDiretoria('diretoriaModal','diretoriaModalOpen','diretoriaModalClose');
 getCursos();
- modalFy('diretoriaModal','diretoriaModalOpen','diretoriaModalClose');
+

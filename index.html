@@ -124,9 +124,10 @@
         <p>Bem vindo ao site oficial da  UBAAT<br>
           <a href=""  id="videoModalOpen">Clique aqui e assista agora nosso vídeo institucional  e conheça o trabalho de um Arteterapeuta.</a>
         </p>
-        <video autoplay muted loop class="intro">
+        <img src="assets/img/intro.gif" class="intro">
+        <!-- <video autoplay muted loop class="intro">
           <source src="assets/intro.mov"></source type="video/mp4">
-        </video>  
+        </video>   -->
       </section> 
       <div class="bgimg-2"></div>
       <!-- CURSOS -->
@@ -157,7 +158,9 @@
           <div id="sul" class="tabcontent">
             <h3>Sul</h3>            
           </div>
-       
+          <div  >
+            <h3 id="closeTab" onclick="closeTab();return false;">Fechar</h3>            
+          </div>
         </div>
       </section>
       <div class="bgimg-2"></div>
@@ -221,7 +224,7 @@
         </div>        
       </section>
       <!-- ARTETERAPIA 2 -->
-      <section  id="arteterapia2">
+      <section class="section" id="arteterapia2">
         <div class="swiper swpArteterapiaTipos">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -336,7 +339,7 @@
       </section>
       <div class="bgimg-5"></div>
       <!-- ASSOCIAÇÕES -->
-      <section   id="associacoes">
+      <section class="section"  id="associacoes">
         <div class="container">
           
           <div class="swiper swpAssociacoes">
@@ -345,7 +348,7 @@
                 <img src="assets/img/logos/aarj.jpg">
               </div>
               <div class="associacao swiper-slide">
-                <img src="assets/img/logos/aatergs.jpg">
+                <img src="assets/img/logos/aatergs.png">
               </div>
               <div class="associacao swiper-slide">
                 <img src="assets/img/logos/aatesp.jpeg">
@@ -378,7 +381,7 @@
                 <img src="assets/img/logos/aspoart.jpg">
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+             
           </div>
         </div>
       </section>        
@@ -401,13 +404,20 @@
               </div>
             </div>
             <div class="column">
-              <form action="">
-                <div class="form"><input type="text" placeholder="*Nome:"></div>
-                <div class="form"><input type="text" placeholder="*Email"></div>
-                <div class="form"><input type="text" placeholder="*Assunto"></div>
-                <div class="form"><textarea type="text" placeholder="*Mensagem" rows="5"></textarea></div>
+              <form action="" id="contatoForm" novalidate="true" method="post">
+                <div class="form"><input type="text" placeholder="*Nome:" required="required" id="nome"></div>
+                <div class="form"><input type="text" placeholder="*Email"  required="required" id="email"></div>
+                <div class="form">
+                  <select placeholder="*Assunto"  required="required" id="assunto" >
+                    <option value="">-- Escolha um assunto --</option>
+                    <option value="contato@ubaat.com.br">Contato</option>
+                    <option value="secretaria@ubaat.com.br">Secretaria</option>                    
+                    <option value="tesouraria@ubaat.com.br">Tesouraria</option>
+                  </select> 
+                </div>
+                <div class="form"><textarea type="text" placeholder="*Mensagem" rows="5"  required="required" id="mensagem"></textarea></div>
                 <div class="form"> 
-                  <a href="#" class="btn" >Enviar</a>
+                  <button type="submit" href="#" class="btn" onclick="contato();return false;">Enviar</button>
                 </div>
               </form>
             </div>
@@ -415,8 +425,8 @@
         </div>
       </section>
     </main>
-    <footer class="section">
-      <div class="container grid">         
+    <footer>
+      <div class="container ">         
           <p>©2022 UBAAT - União Brasileira de Associações de Arteterapia. Todos os direitos reservados.</p>
       </div>
     </footer>
@@ -425,7 +435,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- main.js -->
     <script src="main.js"></script>
   </body>
 </html>
+
