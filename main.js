@@ -293,6 +293,19 @@ function modalAviso(modalToShow,closeButton){
 
 }
 
+function modalAssociacoes(modalToShow,openButton,closeButton){
+  var modalVi = document.getElementById(modalToShow);
+  var openVi = document.getElementById(openButton);
+  var closeVi = document.getElementById(closeButton);
+  
+    openVi.onclick = function() {  modalVi.style.display = "block";  return false;}
+    if(closeVi!=null){ closeVi.onclick = function() {  modalVi.style.display = "none"; return false;}}
+    window.onclick = function(event) {
+      if (event.target == modalVi) {
+        modalVi.style.display = "none";        
+      }
+    };  
+}
 function contato(){
   const nome=document.getElementById('nome');
   const assunto=document.getElementById('assunto');
@@ -354,9 +367,11 @@ if(nome.value!==''&&nome.value!==undefined&&nome.value!==null
     });
   }
 }
-  function resetFormContato(){  
-document.forms[0].reset();
-  }
+
+function resetFormContato()
+{  
+  document.forms[0].reset();
+}
 
 
 window.addEventListener('scroll', function () {
@@ -372,5 +387,6 @@ swpAssociacoes.init();
 modalVideo('videoModal','home','videoModalClose');
 modalAviso('homeModal','homeModalClose');
 modalDiretoria('diretoriaModal','diretoriaModalOpen','diretoriaModalClose');
+modalAssociacoes('assocModal','swpAssociacoes','assocModalClose');
 getCursos();
 
