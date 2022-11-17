@@ -151,7 +151,7 @@ nav.show div.icon-close                       { visibility: visible;  opacity: 1
 #cursos .city                                 { padding: 1rem;   font-size: 1.5rem;  text-transform: capitalize;}
 #cursos ul                                    { display:block;width: 100%;margin-bottom: 2rem;}
 #cursos ul li                                 { display: block;    width: 100%;    padding: 0.25rem;    font-size: 1.15rem;  }
-#cursos ul li span                            { padding: .25rem;  }
+#cursos ul li span                            { padding: .25rem;  overflow-wrap: break-word;  word-wrap: break-word;  word-break: break-word;}
 #cursos ul li .campo                          { font-weight: bold;    width: 170px;    display: inline-block;    text-align: end;    margin-right: 0.5rem;  }
 #cursos ul li .breakline                      { display: block;    width: 100%;    margin-bottom:2rem;  }
 
