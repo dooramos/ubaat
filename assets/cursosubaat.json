@@ -28,9 +28,9 @@
             
             } ,{
               "nome":"Pós-Graduação Lato Sensu em Arteterapia", 
-              "instituicao":"Instituto Freedom em parceria com a FAVI- Faculdades Vicentina", 
+              "instituicao":"Instituto Freedom em parceria FAPRO - Faculdade Profissional de Curitiba ", 
               "endereco":"Rua Luis Góis, 1205, 1º andar, Vila Mariana - São Paulo/SP", 
-              "telefone":"(11) 2275-6424",
+              "telefone":"(11) 2275-6424 / 5594-2821 e Whatsapp (11) 95694-6393",
               "site":"https://www.institutofreedom.com.br",
               "email":"contato@institutofreedom.com.br",
               "coordenacao":" Dilaina Paula dos Santos - AATESP 011/1203 e Regina Maria Fiorezzi Hardt Chiesa AATESP - 022/1203"
@@ -41,21 +41,12 @@
               "endereco":"Rua Ministro Godói, 1484, Perdizes - São Paulo/SP", 
               "telefone":"(11) 3866-2730",
               "site":" https://sedes.org.br",
-              "email":"secretaria@sedes.org.br",
-              "coordenacao":"Selma Ciornai AATESP 014/1203, Maria Alice do Val Barcellos AATESP 024/1203"
-            
-            } ,{
-              "nome":"Pós Arteterapia", 
-              "instituicao":"NAPE – Núcleo de Arte e Educação em parceria com a FAVI- Faculdades Vicentina", 
-              "endereco":"Av. Benedicto de Campos,35 - Jardim do Trevo, Campinas/SP", 
-              "telefone":" (11) 91037-4164",
-              "site":"https://www.artenape.com.br/",
-              "email":"contato@artenape.com.br",
-              "coordenacao":" Fabíola Maria Gaspar - AATESP 064/0706"
+              "email":"arteterapia@sedes.org.br",
+              "coordenacao":"Selma Ciornai AATESP 014/1203, Maria Alice do Val Barcellos AATESP 024/1203 e Regina Aparecida dos Santos – AATESP 018/1203"
             
             }  ,{
               "nome":"Pós Arteterapia", 
-              "instituicao":"NAPE – Núcleo de Arte e Educação em parceria com a FAVI- Faculdades Vicentina", 
+              "instituicao":"NAPE – Núcleo de Arte e Educação – São Paulo", 
               "endereco":"Rua Treze de Maio, 717 - Bela Vista - São Paulo/SP", 
               "telefone":" (11) 91037-4164",
               "site":"https://www.artenape.com.br/",
@@ -63,51 +54,59 @@
               "coordenacao":" Fabíola Maria Gaspar - AATESP 064/0706"
             
             } ,{
+              "nome":"Arteterapia Junguiana", 
+              "instituicao":"Universidade Paulista - UNIP", 
+              "endereco":"Rua Vergueiro, 1211 - 12º andar - Liberdade - São Paulo/SP", 
+              "telefone":"(11) 95078-1200",
+              "site":"https://posunip.com.br/curso-detalhe/arteterapia-junguiana/11790",
+              "email":"paraiso.pos@unip.br",
+              "coordenacao":"Dra. Irene Gaeta - AATESP 043/0504"
+            
+            },{
+              "nome":"Arteterapia", 
+              "instituicao":"Acrópole Instituto Educacional", 
+              "endereco":"Rua Dr. Fuas de Mattos Sabino, 1245 - Jardim América -  CEP: 17017-332 - Bauru/SP", 
+              "telefone":"14 99660-5122 /   14 98190-0305",
+              "site":"www.facnopar.com.br",
+              "email":"acropole.educ@gmail.com",
+              "coordenacao":"Cássia Regina de Toledo Rando - AATESP 237/0512"
+            
+            },
+            
+            
+            
+            
+            {
               "nome":"Pós Arteterapia", 
-              "instituicao":"NAPE – Núcleo de Arte e Educação em parceria com a FAVI- Faculdades Vicentina", 
-              "endereco":"Rua Durval Rocha, 211 - Vila Paraiba - Guaratingueta/SP | CEP:12515-710", 
+              "instituicao":"NAPE – Núcleo de Arte e Educação em parceria com a FAVI- Faculdades Vicentina - Campinas", 
+              "endereco":"Av. Benedicto de Campos,35 - Jardim do Trevo, Campinas/SP", 
               "telefone":" (11) 91037-4164",
               "site":"https://www.artenape.com.br/",
               "email":"contato@artenape.com.br",
               "coordenacao":" Fabíola Maria Gaspar - AATESP 064/0706"
             
-            }  ,{
-              "nome":"FACOL - Faculdade Orígenes Lessa", 
-              "instituicao":"FACOL - Faculdade Orígenes Lessa", 
-              "endereco":"Rodovia Osni Mateus,km 108 -São Judas Tadeu - Lençóis Paulista/SP", 
-              "telefone":"(14)3269-3800 ",
-              "site":"https://facol.br/",
-              "email":"flaviomottaminds@gmail.com/dallalana@gmail.com",
-              "coordenacao":"Cássia Regina de Toledo Rando AATESP 237/0512"
+            } ,
             
-            } ,{
+            
+            {
+              "nome":"Pós Arteterapia", 
+              "instituicao":"NAPE – Núcleo de Arte e Educação em parceria com a FAVI- Faculdades Vicentina", 
+              "endereco":"Rua Fernão Dias 183 – Jardim Nova América  – CEP: 12242-580 - São José dos Campos/SP", 
+              "telefone":" (11) 91037-4164",
+              "site":"https://www.artenape.com.br/",
+              "email":"contato@artenape.com.br",
+              "coordenacao":" Fabíola Maria Gaspar - AATESP 064/0706"
+            
+            }   ,{
               "nome":"Arteterapia", 
               "instituicao":"Faculdade CENSUPEG", 
               "endereco":"R. Dr. José Brenha Ribeiro, 21 – CEP 18130-470 São Roque/SP ", 
               "telefone":": 0800-600-6808 / (11) 97178-9082",
-              "site":"https://www.censupeg.com.br/academy",
+              "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
               "email":"arteterapia@censupeg.com.br",
               "coordenacao":"Franklin Jones Vieira – 078/0814 ACAT"
             
-            } ,{
-              "nome":"Arteterapia", 
-              "instituicao":"Instituto Sedes Sapientiae", 
-              "endereco":"Rua Ministro Godói, 1484, Perdizes - São Paulo/SP", 
-              "telefone":"(11) 3866-2730",
-              "site":" https://sedes.org.br",
-              "email":"secretaria@sedes.org.br",
-              "coordenacao":"Selma Ciornai AATESP 014/1203, Maria Alice do Val Barcellos AATESP 024/1203"
-            
-            }  ,{
-              "nome":"Arteterapia Junguiana", 
-              "instituicao":"Universidade Paulista - UNIP", 
-              "endereco":"Rua Vergueiro, 1211 - 12º andar - Liberdade - São Paulo/SP", 
-              "telefone":"0800 010 9000",
-              "site":"https://posunip.com.br/curso-detalhe/arteterapia-junguiana/11790",
-              "email":"paraiso.pos@unip.br",
-              "coordenacao":"Dra. Irene Arcuri"
-            
-            } 
+            }   
           ]
        },
        {      
@@ -132,11 +131,11 @@
           [
             {
               "nome":"Arteterapia em Educação e Saúde", 
-              "instituicao":"ISEC e FAMESC – Faculdade Metropolitana São Carlos", 
+              "instituicao":"Formação (ISEC) e Pós-graduação Lato Sensu (ISEC / FAMESC – Faculdade Metropolitana São Carlos", 
               "endereco":"Avenida N. Sra. Copacabana, nº 680 – Copacabana – CEP: 22050-001  Rio de Janeiro/RJ", 
               "telefone":"(21) 98085-0333 / (22) 99824-1440",
               "site":"https://www.isec.psc.br/",
-              "email":"isecpsicologia@gmail.com ",
+              "email":"isecpsicologia@gmail.com / beatrizacampora@gmail.com / arteterapiaisec@gmail.com ",
               "coordenacao":"Beatriz Acampora "
             
             } , {
@@ -158,6 +157,15 @@
               "coordenacao":"Fabiana Geraldi"
             
             }  , {
+              "nome":"Pós Graduação Lato Sensu Convênio Clínica Pomar de Arteterapia e com FAVI – Faculdades Vicentina", 
+              "instituicao":"Clínica de Arteterapia POMAR", 
+              "endereco":"Rua Engenheiro Adel, 62 – Tijuca – CEP: 20260-210 - Rio de Janeiro/RJ", 
+              "telefone":"(21) 99677-3636",
+              "site":"arteterapia.org.br",
+              "email":"pomar@alternex.com.br",
+              "coordenacao":"Angela Philippini – AARJ 003/0399"
+            
+            } , {
               "nome":"Formação em Arteterapia", 
               "instituicao":"Clínica de Arteterapia POMAR", 
               "endereco":"Rua Engenheiro Adel, 62 – Tijuca – CEP: 20260-210 - Rio de Janeiro/RJ", 
@@ -207,7 +215,7 @@
               "endereco":"Rua Cardoso Moreira 366 – Turf Club – CEP: 28024-492 - Campos dos Goitacazes/RJ", 
               "telefone":"(21) 98085-0333 / (22) 99824-1440",
               "site":"https://www.isec.psc.br/",
-              "email":"isecpsicologia@gmail.com ",
+              "email":"isecpsicologia@gmail.com / beatrizacampora@gmail.com / arteterapiaisec@gmail.com ",
               "coordenacao":"Beatriz Acampora "
             
             },
@@ -249,7 +257,7 @@
           [
             {
               "nome":"Arteterapia na Educação, Saúde, Artes e Empresas", 
-              "instituicao":"Integrarte Centro de Atividades / FAVI", 
+              "instituicao":"Integrarte Centro de Atividades / FAVI Faculdade Vicentina", 
               "endereco":"Rua Alfenas, 373 – Cruzeiro – CEP: 30310-230 - Belo Horizonte/MG", 
               "telefone":"(31) 98449-5937 / (31) 3227-9829",
               "site":"www.integrarte.com.br",
@@ -263,8 +271,8 @@
               "endereco":"Avenida Guilherme Ferreira, 389 – Centro – CEP: 38010-200 - Uberaba/MG", 
               "telefone":"(34) 99769-0013 / (34) 99203-8128",
               "site":" ",
-              "email":"gracamachado@gmail.com",
-              "coordenacao":"Maria das Graças de Carvalho Machado"
+              "email":"gracamachado@gmail.com / haretheespacohunikuin@gmail.com",
+              "coordenacao":"Maria das Graças de Carvalho Machado - AMART 113/0712"
             
             }
           ]
@@ -275,8 +283,8 @@
           [
             {
               "nome":"Ênfase na saúde e educação", 
-              "instituicao":"Instituto Fênix de Humanização", 
-              "endereco":"Escadaria Acyr Guimarães, 33 – Centro – CEP: 29015-360 - Vitória / UF: ES", 
+              "instituicao":"Instituto Fênix de Humanização / FATEC – PR (Faculdade de Tecnologia de Curitiba)", 
+              "endereco":"Escadaria Acyr Guimarães, 33 – Centro – CEP: 29015-360 - Vitória/ES", 
               "telefone":"(27) 3222-1117 / (27) 99903-1776",
               "site":"www.institutofenix.com",
               "email":"contato@insitutofenix.com",
@@ -297,13 +305,22 @@
            "lista": 
            [
             {
+              "nome":"Curso de Especialização em Arteterapia Junguiana", 
+              "instituicao":"Instituto Junguiano da Bahia (IJBA)", 
+              "endereco":"Av. Dom João VI, 275, Brotas", 
+              "telefone":"(71) 3356-6811/ WhatsApp 9927-8183",
+              "site":"https://www.censupeg.com.br/academy/",
+              "email":"posgrad2@bahiana.edu.b / instituto@ijba.com.br",
+              "coordenacao":"Carla Maciel"
+            
+            }  ,{
               "nome":"Pós-graduação em Arteterapia – CENSUPEG ", 
               "instituicao":"Faculdade CENSUPEG", 
-              "endereco":"Atua em Salvador, mas em função da pandemia não está com endereço fixo", 
+              "endereco":"Intercity Salvador - Endereço: Av. Tancredo Neves, 2227 - Caminho das Árvores, Salvador/BA", 
               "telefone":"(47) 3032-6150",
-              "site":"https://www.censupeg.com.br/academy/",
+              "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
               "email":"arteterapia@censupeg.com.br",
-              "coordenacao":"Franklin Jones Vieira"
+              "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"
             
             }  
            ]
@@ -318,7 +335,7 @@
               "endereco":"Rua José Freire, 241. Salgado Filho – CEP 49035-430 Aracaju/SE", 
               "telefone":"(79) 98845-9740",
               "site":"https://arteterapia.aju.br",
-              "email":"entreartesespacoterapeutico@gmail.com",
+              "email":"entreartesespacoterapeutico@gmail.com / taisaandrade@gmail.com / contato@arteterapia.aju.br",
               "coordenacao":"Taísa Belém do Espírito Santo Andrade (ASBART 0209/0329)  "
             
             }   
@@ -378,16 +395,7 @@
             "site":" ",
             "email":"marciabottini@yahoo.com.br / luas@live.com ",
             "coordenacao":"Márcia Bertelli Bottini – ASPOART – 013/05 / Luzia Sampaio de Athayde – ASPOART 007/05 "          
-          } ,
-           {
-            "nome":"Curso de formação em Arteterapia Cláudia Brasil Ateliê", 
-            "instituicao":"UNIFIP Universidade de Patos", 
-            "endereco":"Rua 5, Quadra M, casa 01 – Jardim Bela Vista – CEP: 65071-380 São Luiz/MA ", 
-            "telefone":"(98) 3304-1573 / (98) 99131-3148",
-            "site":" ",
-            "email":" ",
-            "coordenacao":"Cláudia Brasil "          
-          } 
+          }
          ]
        } 
        ,
@@ -420,7 +428,7 @@
               "nome":"Pós-graduação em Arteterapia – CENSUPEG ", 
               "instituicao":"Faculdade CENSUPEG", 
               "endereco":"Rua Ferreira Cantão, 100 - Campina - Hotel Zoghbi - Belém/PA", 
-              "telefone":"(47) 3032-6150",
+              "telefone":"(91) 91992112 (Consultora Rafaela)",
               "site":"https://www.censupeg.com.br/academy/course/arteterapia/36",
               "email":"arteterapia@censupeg.com.br",
               "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"
@@ -498,7 +506,7 @@
               },
               {
                 "nome":"Arteterapia na Educação, Saúde, Artes e Empresas", 
-                "instituicao":"Integrarte Centro de Atividades / FAVI", 
+                "instituicao":"Integrarte Centro de Atividades / FAVI Faculdade Vicentina", 
                 "endereco":"Rua dos Presbíteros, 66 – São Francisco – CEP: 82590-300 - Curitiba/PR", 
                 "telefone":"(41) 9697-5313 ou (31) 98449-5937",
                 "site":"www.integrarte.com.br",
@@ -520,10 +528,10 @@
                 "nome":"Arteterapia", 
                 "instituicao":"CENSUPEG", 
                 "endereco":"Edifício Twin Towers – 501 – Jardim Shangri-lá – CEP: 86070-545 - Londrina/PR", 
-                "telefone":" ",
+                "telefone":"0800 6006808 ou (47) 3028-0868",
                 "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
                 "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"
+                "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"
               
               }
             ]
@@ -532,14 +540,14 @@
             "nome":"Santa Catarina",
             "lista": 
             [
-              {
+             {
                 "nome":"Arteterapia", 
                 "instituicao":"CENSUPEG", 
-                "endereco":"Rua do Príncipe, 796 – Centro – CEP: 89201-001 Joinville/SC", 
-                "telefone":"(47) 3032-6150",
+                "endereco":"Colégio Tendência – Rua Padre Roma, 404 – Centro CEP 88015-140 - Florianópolis/SC", 
+                "telefone":" ",
                 "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
                 "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"
+                "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"
               
               } ,
               {
@@ -549,19 +557,10 @@
                 "telefone":"(47) 3032-6150",
                 "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
                 "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"
+                "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"
               
               } ,
-              {
-                "nome":"Arteterapia", 
-                "instituicao":"CENSUPEG", 
-                "endereco":"Colégio Tendência – Rua Padre Roma, 404 – Centro CEP 88015-140 - Florianópolis/SC", 
-                "telefone":" ",
-                "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
-                "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"
               
-              } ,
               {
                 "nome":"Arteterapia", 
                 "instituicao":"CENSUPEG", 
@@ -569,8 +568,17 @@
                 "telefone":" ",
                 "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
                 "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"              
+                "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"              
             } ,
+            {
+              "nome":"Arteterapia", 
+              "instituicao":"CENSUPEG", 
+              "endereco":"Rua do Príncipe, 796 Bairro: Centro – CEP: 89201-001 Joinville/SC", 
+              "telefone":"(47) 3032-6150; (47) 99122-0924 (whatsapp)",
+              "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
+              "email":"arteterapia@censupeg.com.br",
+              "coordenacao":"Franklin Jones Vieira - ACAT 078/0814"              
+          } ,
             {
               "nome":"Formação de Terapeutas em Arteterapia", 
               "instituicao":"INCORPORARTE", 
@@ -591,19 +599,19 @@
                 "nome":"Arteterapia", 
                 "instituicao":"CENSUPEG", 
                 "endereco":"Largo Visconde do Cairú, 17 – 8º Andar – Centro – CEP: 90030-110 - Porto Alegre/RS", 
-                "telefone":"(51) 98052-3932 ou (51) 98480-1444",
+                "telefone":"0800 6006808 ou (47) 30280868",
                 "site":"https://www.censupeg.com.br/academy/home/course/arteterapia/36",
-                "email":"arteterapia@censupeg.com.br",
-                "coordenacao":"Franklin Jones Vieira"
+                "email":"arteterapia@censupeg.com.br / pos.portoalegre@censupeg.com.br",
+                "coordenacao":"Franklin Jones Vieira ACAT 078/0814"
               
               } ,
               {
                 "nome":"Formação em Arteterapia Junguiana – Saúde – Cultura – Diversidade", 
-                "instituicao":"Corina Post Psicologia Analítica e Atividades Expressivas", 
+                "instituicao":"Instituto Junguiano do Rio Grande do Sul  e Corina Post Psicologia Analítica e Atividades Expressivas", 
                 "endereco":" Rua José de Alencar, 630 – Menino Deus – CEP: 90880-480 - Porto Alegre/RS", 
-                "telefone":"51 996323797",
+                "telefone":"51 996323797 e  51 981404107",
                 "site":"https://www.ijrs.org.rs",
-                "email":" ijunguianors@gmail.com",
+                "email":"ijunguianors@gmail.com",
                 "coordenacao":"Corina Post (AATERGS 010/0603) e Denise Schinetzky (AATERGS 142/0417)"
               
               },
@@ -618,7 +626,7 @@
               } ,
               {
                 "nome":"Formação em Arteterapia", 
-                "instituicao":"PSIQUE – Clínica Terapêutica (credenciamento em análise)", 
+                "instituicao":"PSIQUE – Clínica Terapêutica - FAMAQUI - Faculdade Mário Quintana", 
                 "endereco":"Rua Felicíssimo de Azevedo, 1362 – Auxiliadora – CEP: 90540-110 - Porto Alegre/RS", 
                 "telefone":"(51) 2112-8209 e (51) 99334-3821",
                 "site":"https://www.psiquers.com/",
@@ -636,7 +644,7 @@
               } ,
               {
                 "nome":"Curso de Pós-graduação em Arteterapia", 
-                "instituicao":"Faculdade de Artes e Comunicação – FAC", 
+                "instituicao":"Faculdade de Artes e Comunicação – FAC - Universidade de Passo Fundo ", 
                 "endereco":"BR 285 – São José – CEP: 99052-900 - Passo Fundo/RS", 
                 "telefone":"(54) 3316-8100",
                 "site":"http://www.upf.br/",
